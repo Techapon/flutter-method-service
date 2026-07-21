@@ -1,9 +1,3 @@
-﻿# flutter-method-service
-
-
-<img height="450" alt="flutter_service_tech_stack" src="https://github.com/user-attachments/assets/f3c3ebf2-5a99-4505-8033-92859ef3b5c4" />
-
-
 
 # Flutter Method CLI
 
@@ -20,25 +14,15 @@ This saves you time from making the same folders and files by hand every time yo
 
 ## Tech Stack
 
-Part
+<img height="450" alt="flutter_service_tech_stack" src="https://github.com/user-attachments/assets/f3c3ebf2-5a99-4505-8033-92859ef3b5c4" />
 
-What it does
-
-**PowerShell**
+**PowerShell Script**
 
 The main script (`flutter_method_create_arch.ps1`). It creates folders/files, asks for your input, and shows the tree view.
 
 **Batch Script (.bat)**
 
 A shortcut file that runs the PowerShell script for you, so you don't need to type the full command every time.
-
-**Windows Environment Variables (PATH)**
-
-Lets you run the tool from any folder in the terminal, just by typing `flutter_arch`.
-
-**Flutter / Dart (the end goal)**
-
-This tool is not written in Flutter/Dart itself. It's a helper that builds `.dart` files and folders in the **Clean Architecture** style for your Flutter project.
 
 > This tool only works on **Windows**, because it needs PowerShell and a `.bat` file. It does not work on macOS or Linux yet.
 
