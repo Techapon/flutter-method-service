@@ -14,13 +14,13 @@ This saves you time from making the same folders and files by hand every time yo
 
 ## Tech Stack
 
-<img height="450" alt="flutter_service_tech_stack" src="https://github.com/user-attachments/assets/f3c3ebf2-5a99-4505-8033-92859ef3b5c4" />
+<img height="275" alt="flutter_service_tech_stack" src="https://github.com/user-attachments/assets/f3c3ebf2-5a99-4505-8033-92859ef3b5c4" />
 
-**PowerShell Script**
+**PowerShell Script** : 
 
 The main script (`flutter_method_create_arch.ps1`). It creates folders/files, asks for your input, and shows the tree view.
 
-**Batch Script (.bat)**
+**Batch Script (.bat)** :
 
 A shortcut file that runs the PowerShell script for you, so you don't need to type the full command every time.
 
@@ -99,11 +99,16 @@ features/
     
     ```
     
-2.  Make sure both files are in the same folder:
-    
+2.  Run git clone method in `C:\Scripts\flutter_method_CLI\` path
+	
+	```
+	git clone https://github.com/Techapon/flutter-method-service.git
+	```
+	And make sure both files are in the same folder:
+	 
     -   `flutter_method_create_arch.ps1`
     -   `flutter_arch.bat`
-3.  **Set the correct path in the `.bat` file.** Open `flutter_arch.bat` and change the path so it matches where you saved the `.ps1` file:
+4.  **Set the correct path in the `.bat` file.** Open `flutter_arch.bat` and change the path so it matches where you saved the `.ps1` file:
     
     ```bat
     @echo off
@@ -111,13 +116,13 @@ features/
     
     ```
     
-4.  **Add the folder to your Environment Variables (PATH)** so you can run the command from anywhere:
+5.  **Add the folder to your Environment Variables (PATH)** so you can run the command from anywhere:
     
     -   Open **Edit the system environment variables** > **Environment Variables**
     -   Find the `Path` variable (User or System) and click **Edit** > **New**
     -   Add the folder path where `flutter_arch.bat` is saved, e.g. `C:\Scripts\flutter_method_CLI\`
     -   Click OK, then open a new terminal window for the change to take effect
-5.  Test it. Open a new terminal and type:
+6.  Test it. Open a new terminal and type:
     
     ```
     flutter_arch
